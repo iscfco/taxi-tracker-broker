@@ -6,6 +6,7 @@ import (
 	"taxi-tracker-broker/pubsubi"
 )
 
+// TODO: go to https://blog.golang.org/go-maps-in-action and see the concurrency item, and add locks according the  documentation specification.
 type TopicHandler struct {
 	topicBag     map[string]map[string]*model.SocketConnection
 	clientTopics map[string][]string
